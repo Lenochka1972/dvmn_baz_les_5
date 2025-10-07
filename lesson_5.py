@@ -6,7 +6,8 @@ from faker import Faker
 
 def main():
 
-    os.makedirs('cards_lesson5')
+    if not os.path.exists('cards_lesson5'):
+        os.makedirs('cards_lesson5')
 
     fake = Faker('ru_RU')
 
